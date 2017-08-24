@@ -38,10 +38,10 @@ export default {
     }
   },
   created(){
-    this.$http.get('/api/seller?id='+this.seller.id)
+    this.$http.get('https://duchangjia.github.io/sell/data.json?'+this.seller.id)
     .then((rel)=>{
-      rel=rel.body
-      this.seller=Object.assign({},this.seller,rel.data);
+      rel=rel.body.seller
+      this.seller=Object.assign({},this.seller,rel);
       console.log(this.seller)    
     })
   }

@@ -222,7 +222,7 @@
 		    	this.fold=!this.fold
 		    },
 		    hideList(){
-		    	this.listShow=false
+		    	this.fold = true;
 		    }
 		},
 	}

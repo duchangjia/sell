@@ -147,7 +147,7 @@ export default{
 			response=response.body.goods;
 			
 				console.log(this.goods)
-				this.goods=response.data;
+				this.goods=response;
 				this.$nextTick(()=>{
 					this._initScroll()
 					this._calculateHeight()

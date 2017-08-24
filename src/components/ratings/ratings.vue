@@ -110,11 +110,11 @@
 			RatingSelect
 		},
 		created(){
-			this.$http.get('/api/ratings').then((res)=>{
-				res=res.body;
+			this.$http.get('https://duchangjia.github.io/sell/data.json').then((res)=>{
+				res=res.body.ratings;
 				console.log(res)
 				if(res.errno===0){
-					this.ratings=res.data;
+					this.ratings=res;
 					this.$nextTick(()=>{
 						this._initScroll();
 					})

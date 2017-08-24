@@ -10,18 +10,18 @@ export default new Router({
   routes: [
   	{
   		path: '/',
-  		redirect:'/goods',
+  		redirect:'/sell/dist/goods',
   	},
   	{
-      path: '/goods',
+      path: '/sell/dist/goods',
       component: Goods
     },
     {
-      path: '/ratings',
+      path: '/sell/dist/ratings',
       component: ratings
     },
     {
-      path: '/seller',
+      path: '/sell/dist/seller',
       component: seller,
     },  
   ],

@@ -143,8 +143,8 @@ export default{
 	},
 	created(){
 		this.classMap=['decrease','discount','special','invoice','guarantee'];
-		this.$http.get('/api/goods').then((response)=>{
-			response=response.body;
+		this.$http.get('https://duchangjia.github.io/sell/data.json').then((response)=>{
+			response=response.body.goods;
 			if(response.errno===0){
 				console.log(this.goods)
 				this.goods=response.data;

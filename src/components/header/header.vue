@@ -22,13 +22,13 @@
             </div>
             <div class="support_count" v-if="seller.supports" @click="showDetail">
                 <span class="count">{{seller.supports.length}}个</span>
-                <i class="icon-keyboard_arrow_right"></i>
+                <i class="icon-keyboard_arrow_right iconfont icon-next"></i>
             </div>
         </div>
         <div class="bulletin_wrapper" @click="showDetail">
             <span class="bulletin_title"></span>
             <span class="bulletin_text">{{seller.bulletin}}</span>
-            <i class="icon-keyboard_arrow_right"></i>
+            <i class="icon-keyboard_arrow_right iconfont icon-next"></i>
         </div>
         <div class="head_bg">
             <img :src="seller.avatar" width="100%" height="100%">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="detail_close" v-on:click="closeDetail">
-                    <i class="icon-close"></i>
+                    <i class="icon-close icon-huaban iconfont" style="font-size:32px"></i>
                 </div>
             </div>
         </transition>

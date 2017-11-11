@@ -9,7 +9,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="foods-wrapper" id="wrapperContent">
+		<div class="foods-wrapper" id="wrapperContent" style="width:100%">
 			<ul>
 				<li v-for="item in goods" class="food-list food-list-hook">
 					<h1 class="title">{{item.name}}</h1>

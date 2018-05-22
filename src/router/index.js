@@ -25,6 +25,7 @@ export default new Router({
       component: seller,
     },  
   ],
-  linkActiveClass:'active'
+  linkActiveClass:'active',
+  fallback:true,
 })
  /*Router.push('/goods')*/
